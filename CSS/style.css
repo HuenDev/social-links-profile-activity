@@ -1,0 +1,126 @@
+/* FUENTES Y VARIABLES */
+@font-face
+{
+    font-family: 'Inter-VariableFont_slnt,wght.ttf';
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root
+{
+    --color-white: #ffffff;
+    --color-sub-title: #c5f82a;
+    --Grey--700-light: hsl(0, 0%, 20%);
+    --Grey-800-medium: #1f1f1f;
+    --Grey-900-dark: #141414;
+    --main-font: 'Inter-VariableFont_slnt,wght.ttf'
+}
+
+
+/* GLOBALES */
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: var(--Grey-900-dark);
+    font-family: var(--main-font);
+}
+
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+
+h1
+{
+    font-size: 3rem;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+h2
+{
+    font-size: 1.8rem;
+    color: var(--color-sub-title);
+    font-weight: 600;
+}
+
+p
+{
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.container
+{
+    margin: 10rem 1.5rem;
+    padding: 3rem;
+    text-align: center;
+    background-color: var(--Grey-800-medium);
+    border-radius: 1.5rem;
+}
+
+
+@media (min-width: 1440px)
+{
+    .container
+    {
+        width: 30%;
+        margin: 15rem auto;
+        padding: 5rem;
+        text-align: center;
+        background-color: var(--Grey-800-medium);
+        border-radius: 1.5rem;
+    }
+}
+
+
+/* HEADER*/
+.name-title
+{
+    margin: 3rem 0 0 0;
+}
+
+.photo
+{
+    border-radius: 50%;
+    width: 15rem;
+    max-width: 100%;
+}
+
+.ubication
+{
+    margin-top: 1rem;
+}
+
+.about-me
+{
+    margin: 3rem 0 2.5rem 0;
+
+}
+
+
+/* SECCIONES */
+.sections
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sections__buttons
+{
+    font-family: var(--main-font);
+    font-weight: 600;
+    padding: 1.4rem;
+    border-radius: .7rem;
+    color: var(--color-white);
+    background-color: var(--Grey--700-light);
+    border: none;
+    cursor: pointer;
+}
